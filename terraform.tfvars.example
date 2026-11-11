@@ -1,0 +1,20 @@
+# ============================================================
+# terraform.tfvars.example
+#
+# Copy this file to terraform.tfvars and fill in your values.
+# terraform.tfvars is listed in .gitignore and must NEVER be
+# committed to version control.
+# ============================================================
+
+# ── General ─────────────────────────────────────────────────
+aws_region   = "ap-southeast-2"
+project_name = "cloudsoc"
+
+# ── Networking ───────────────────────────────────────────────
+vpc_cidr           = "10.0.0.0/16"
+public_subnet_cidr = "10.0.1.0/24"
+
+# ── Storage ──────────────────────────────────────────────────
+# Must be globally unique (lowercase, 3-63 chars).
+# Recommended pattern: cloudsoc-logs-<your-account-id>
+s3_bucket_name = "cloudsoc-logs-REPLACE_WITH_YOUR_ACCOUNT_ID"

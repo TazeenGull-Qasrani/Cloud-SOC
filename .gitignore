@@ -1,0 +1,36 @@
+# Terraform state and local secrets — never commit these
+terraform.tfvars
+*.tfstate
+*.tfstate.*
+.terraform/
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform working directory
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.plan
+*.tfplan
+
+# Variable files (review before sharing)
+*.tfvars
+*.tfvars.json
+
+# Credentials and environment files
+.env
+.env.*
+
+# Scratch testing directory
+tf-test/
+
+# Crash logs
+crash.log
+crash.*.log
